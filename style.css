@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centlizar no meio da tela */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Widht é usado pra largura*/
+body {
+    color: white;
+    background-color: #141414;
+    width: 100%;
+}
+
+/*Margin-top da espaço em cima, justify-content: space-between são distribuidos uniformemente na linha (Usado no header), display flex joga pqara direita*/
+header {
+    width: 1200px;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 45%;
+    /* background-color: cadetblue; */
+    display: flex;
+}
+
+/*Centraliza o item, font-size muda o tamanho da fonte*/
+ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+/*Centraliza o texto*/
+.item {
+    text-align: center;
+    width: 80px;
+    list-style: none;
+}
+
+/*Quando o mouse é passado por cima, a linha fica sublinhada (Caso seja para uma classe especifica coloque o nome e depois hover)*/
+.item:hover {
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+.icons {
+    /* background-color: blue; */
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icone {
+    margin: 8px;
+    width: 35px;
+}
+
+main {
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    /* background-color: blueviolet; */
+}
+
+.image {
+    width: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu2 {
+    width: 60%;
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+/*Padding serve para espaçar o conteudo de algo (Usado para espaçar as palavras do menu2)*/
+.border {
+    font-size: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    list-style: none;
+}
+
+.selected {
+    background-color: #951313;
+}
+
+/* Dispay flex fica sempre na classe pai */
+.container {
+    width: 100%;
+    /* background-color: #FF0000; */
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    /* background-color: aquamarine; */
+    /* width: 25%; */
+    /* margin: 1px; */
+    margin-top: 35px;
+}
+
+.borda {
+    width: 210px;
+    height: 180px;
+    border: 4px dashed #C8C8CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /* background-color: darkmagenta; */
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+/*border: 1px(Tamanho no qual queremos a borda) solid (Estilo de borda mais comum) #fff (Cor que queremos a borda)*/
+.compra {
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    width: 60%;
+}
+
+.numero{
+    text-align: center;
+    width: 35%;
+}
+
+.market {
+    width: 65%;
+    text-align: center;
+    border: 2px solid #FCFCFC;
+}
+
+.select {
+    width: 65%;
+    background-color: #951313;
+    text-align: center;
+    border: 2px solid #FCFCFC;
+}
+
+
+/* RESPONSIVO TABLET*/
+@media (max-width: 1024px) {
+
+    /*Widht é usado pra largura*/
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 45%;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 25px;
+        gap: 15px;
+    }
+
+    .item {
+        text-align: center;
+        width: 80px;
+        list-style: none;
+    }
+
+    main {
+        width: 700px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* background-color: blueviolet; */
+    }
+
+    .image {
+        width: 500px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        font-size: 20px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        padding: 15px;
+        list-style: none;
+    }
+
+    .menu2 {
+        width: 100%;
+        /* background-color: blue; */
+        margin-top: 10px;
+        font-family: 'Fontdiner Swanky', cursive;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Fontdiner Swanky', cursive;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /*Widht é usado pra largura*/
+    body {
+        width: 100%;
+    }
+
+    header {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 20%;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 10px;
+        gap: 10px;
+    }
+
+    .item {
+        text-align: center;
+        width: 80px;
+        list-style: none;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* background-color: blueviolet; */
+    }
+
+    .icons img{
+        /* background-color: aqua; */
+        background-size: 15px;
+        width: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .image {
+        width: 150px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .card img {
+        width: 110px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .borda {
+        width: 140px;
+        height: 140px;
+        border: 4px dashed #C8C8CC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        /* background-color: darkmagenta; */
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+ 
+    .compra {
+        /* background-color: darkblue; */
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 5px;
+        border: 1px solid #fff;
+        width: 60%;
+    }
+}
